@@ -12,6 +12,48 @@
   margin-bottom: 1rem;
 }
 
+/* xs - Extra Small Devices */
+@media (min-width: 475px) {
+  .secure-login-section h2 {
+    font-size: 1.8rem; /* Adjust heading size for small devices */
+  }
+}
+
+/* sm - Small Devices */
+@media (min-width: 640px) {
+  .secure-login-section h2 {
+    font-size: 2rem; /* Default size for small devices */
+  }
+}
+
+/* md - Medium Devices */
+@media (min-width: 768px) {
+  .login-form {
+    flex-direction: row; /* Maintain row layout for medium devices */
+  }
+}
+
+/* lg - Large Devices */
+@media (min-width: 1024px) {
+  .secure-login-section {
+    padding: 3rem; /* Increase padding for larger devices */
+  }
+}
+
+/* xl - Extra Large Devices */
+@media (min-width: 1280px) {
+  .secure-login-section {
+    padding: 4rem; /* Further increase padding for extra large devices */
+  }
+}
+
+/* 2xl - Double Extra Large Devices */
+@media (min-width: 1536px) {
+  .secure-login-section h2 {
+    font-size: 2.5rem; /* Increase heading size for very large devices */
+  }
+}
+
 .login-form {
   /* Login form styles */
   display: flex;
@@ -46,9 +88,9 @@
   margin-top: 1rem;
 }
 
+/* Responsive styles for mobile */
 @media (max-width: 768px) {
-  /* Responsive styles for mobile */
   .login-form input {
-    width: 100%;
+    width: 100%; /* Full width on small screens */
   }
 }

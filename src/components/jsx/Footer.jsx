@@ -1,5 +1,5 @@
 import "../style/Footer.css"; // Import CSS for Footer
-
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="footer">
@@ -10,27 +10,27 @@ const Footer = () => {
       <div className="social-links">
         {" "}
         {/* Social media links */}
-        <a
-          href="https://www.facebook.com"
+        <Link
+          to="https://www.facebook.com"
           target="_blank"
           rel="noopener noreferrer"
         >
           Facebook
-        </a>
-        <a
-          href="https://www.twitter.com"
+        </Link>
+        <Link
+          to="https://www.twitter.com"
           target="_blank"
           rel="noopener noreferrer"
         >
           Twitter
-        </a>
-        <a
-          href="https://www.linkedin.com"
+        </Link>
+        <Link
+          to="https://www.linkedin.com"
           target="_blank"
           rel="noopener noreferrer"
         >
           LinkedIn
-        </a>
+        </Link>
       </div>
     </footer>
   );

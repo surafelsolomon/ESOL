@@ -1,3 +1,10 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+} */
+
 .testimonial-section {
   /* Testimonial section container styles */
   background: #fff;
@@ -6,10 +13,46 @@
   text-align: center;
 }
 
-.testimonial-section h2 {
-  /* Section heading styles */
-  font-size: 2rem;
-  margin-bottom: 1rem;
+/* xs - Extra Small Devices */
+@media (min-width: 475px) {
+  .testimonial-section h2 {
+    font-size: 1.8rem; /* Adjust heading size for small devices */
+  }
+}
+
+/* sm - Small Devices */
+@media (min-width: 640px) {
+  .testimonial-section h2 {
+    font-size: 2rem; /* Default size for small devices */
+  }
+}
+
+/* md - Medium Devices */
+@media (min-width: 768px) {
+  .testimonial-section h2 {
+    font-size: 2.2rem; /* Slightly larger for medium devices */
+  }
+}
+
+/* lg - Large Devices */
+@media (min-width: 1024px) {
+  .testimonial-section h2 {
+    font-size: 2.5rem; /* Adjust size for large devices */
+  }
+}
+
+/* xl - Extra Large Devices */
+@media (min-width: 1280px) {
+  .testimonial-section h2 {
+    font-size: 3rem; /* Adjust size for extra large devices */
+  }
+}
+
+/* 2xl - Double Extra Large Devices */
+@media (min-width: 1536px) {
+  .testimonial-section h2 {
+    font-size: 3.5rem; /* Adjust size for 2x large devices */
+  }
 }
 
 .testimonials {
@@ -19,26 +62,36 @@
   flex-wrap: wrap;
 }
 
+/* Single testimonial styles */
 .testimonial {
-  /* Single testimonial styles */
   margin: 1rem;
   text-align: center;
   background: #f9f9f9;
   padding: 1rem;
   border-radius: 10px;
+  flex: 1 1 300px; /* Allow testimonials to grow and shrink */
+  max-width: 400px; /* Set a max width for larger screens */
 }
 
+/* Paragraph styles */
 .testimonial p {
-  /* Paragraph styles */
   margin: 0.5rem 0;
 }
 
-@media (max-width: 768px) {
-  /* Responsive styles for mobile */
+/* Responsive styles for mobile */
+@media (max-width: 1000px) {
   .testimonials {
-    flex-direction: column;
+    flex-direction: column; /* Stack testimonials on small screens */
   }
   .testimonial {
-    margin: 1rem 0;
+    margin: 1rem 0; /* Adjust margin for stacked items */
+    width: 90%; /* Full width on smaller screens */
+  }
+}
+
+/* Additional responsive adjustments */
+@media (max-width: 768px) {
+  .testimonial {
+    padding: 0.8rem; /* Reduce padding for smaller screens */
   }
 }

@@ -1,9 +1,76 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+} */
+
 .benefits-section {
   /* Benefits section container styles */
   background: #fff;
   color: #333;
-  padding: 2rem;
+  padding: 1rem; /* Default padding for mobile */
   text-align: center;
+}
+
+/* Extra small devices (phones, less than 475px) */
+@media (min-width: 475px) {
+  /* Styles for small devices */
+  .benefits-section {
+    padding: 1.5rem; /* Adjust padding for small devices */
+  }
+}
+
+/* Small devices (tablets, 640px and up) */
+@media (min-width: 640px) {
+  /* Styles for medium devices */
+  .benefits-section {
+    padding: 2rem; /* Adjust padding for medium devices */
+  }
+}
+
+/* Medium devices (desktops, 768px and up) */
+@media (min-width: 768px) {
+  /* Section heading styles */
+  .benefits-section h2 {
+    font-size: 2rem; /* Original size for medium devices */
+  }
+  .benefits-section li {
+    font-size: 1.2rem; /* Original size for medium devices */
+  }
+}
+
+/* Large devices (large desktops, 1024px and up) */
+@media (min-width: 1024px) {
+  /* Styles for large devices */
+  .benefits-section h2 {
+    font-size: 2.5rem; /* Adjust size for large devices */
+  }
+  .benefits-section li {
+    font-size: 1.5rem; /* Adjust size for large devices */
+  }
+}
+
+/* Extra large devices (larger desktops, 1280px and up) */
+@media (min-width: 1280px) {
+  /* Styles for extra large devices */
+  .benefits-section h2 {
+    font-size: 3rem; /* Adjust size for extra large devices */
+  }
+  .benefits-section li {
+    font-size: 1.8rem; /* Adjust size for extra large devices */
+  }
+}
+
+/* 2x large devices (1536px and up) */
+@media (min-width: 1536px) {
+  /* Styles for 2x large devices */
+  .benefits-section h2 {
+    font-size: 3.5rem; /* Adjust size for 2x large devices */
+  }
+  .benefits-section li {
+    font-size: 2rem; /* Adjust size for 2x large devices */
+  }
 }
 
 .benefits-section h2 {
@@ -22,14 +89,4 @@
   /* List item styles */
   font-size: 1.2rem;
   margin: 0.5rem 0;
-}
-
-@media (max-width: 768px) {
-  /* Responsive styles for mobile */
-  .benefits-section h2 {
-    font-size: 1.5rem;
-  }
-  .benefits-section li {
-    font-size: 1rem;
-  }
 }

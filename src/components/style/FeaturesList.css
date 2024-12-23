@@ -3,6 +3,7 @@
   background: #fff;
   padding: 2rem;
   text-align: center;
+  color: #2e2d2d;
 }
 
 .features-list h2 {
@@ -14,21 +15,59 @@
 .features-list ul {
   /* Styles for the list */
   list-style: none;
+  display: flex;
   padding: 0;
+  margin-inline: 2rem;
+  flex-wrap: wrap;
 }
 
 .features-list li {
   /* Styles for each list item */
   font-size: 1.2rem;
-  margin: 0.5rem 0;
+  margin: 1.15rem;
 }
 
-@media (max-width: 768px) {
-  /* Responsive styles for mobile */
+/* xs - Extra Small Devices */
+@media (min-width: 475px) {
   .features-list h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   .features-list li {
-    font-size: 1rem;
+    font-size: 1.1rem;
+  }
+}
+
+/* sm - Small Devices */
+@media (min-width: 640px) {
+  .features-list h2 {
+    font-size: 2rem;
+  }
+}
+
+/* md - Medium Devices */
+@media (min-width: 768px) {
+  .features-list ul {
+    margin-inline: 4rem;
+  }
+}
+
+/* lg - Large Devices */
+@media (min-width: 1024px) {
+  .features-list li {
+    font-size: 1.3rem;
+  }
+}
+
+/* xl - Extra Large Devices */
+@media (min-width: 1280px) {
+  .features-list {
+    padding: 3rem;
+  }
+}
+
+/* 2xl - Double Extra Large Devices */
+@media (min-width: 1536px) {
+  .features-list li {
+    font-size: 1.5rem;
   }
 }

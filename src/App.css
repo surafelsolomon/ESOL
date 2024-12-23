@@ -1,11 +1,59 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+} */
+
 .app {
   /* App container styles */
   font-family: Arial, sans-serif;
+  /* Default padding for mobile */
+}
+/* Extra small devices (phones, less than 475px) */
+@media (min-width: 475px) {
+  /* Styles for small devices */
+  .app {
+    /* Adjust padding for small devices */
+  }
 }
 
-@media (max-width: 768px) {
-  /* Responsive styles for mobile */
+/* Small devices (tablets, 640px and up) */
+@media (min-width: 640px) {
+  /* Styles for medium devices */
   .app {
-    padding: 1rem;
+    /* Adjust padding for medium devices */
+  }
+}
+
+/* Medium devices (desktops, 768px and up) */
+@media (min-width: 768px) {
+  /* Styles for large devices */
+  .app {
+    /* Adjust padding for large devices */
+  }
+}
+
+/* Large devices (large desktops, 1024px and up) */
+@media (min-width: 1024px) {
+  /* Styles for extra large devices */
+  .app {
+    /* Adjust padding for extra large devices */
+  }
+}
+
+/* Extra large devices (larger desktops, 1280px and up) */
+@media (min-width: 1280px) {
+  /* Styles for 2x large devices */
+  .app {
+    /* Adjust padding for 2x large devices */
+  }
+}
+
+/* 2x large devices (1536px and up) */
+@media (min-width: 1536px) {
+  /* Styles for 2x large devices */
+  .app {
+    /* Adjust padding for 2x large devices */
   }
 }

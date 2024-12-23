@@ -1,53 +1,83 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+} */
+
 .stats-section {
   /* Stats section container styles */
   background: #f4f4f4;
   color: #333;
-  padding: 2rem;
+  padding: 1rem; /* Default padding for mobile */
   text-align: center;
 }
 
-.stats-section h2 {
+/* Extra small devices (phones, less than 475px) */
+@media (min-width: 475px) {
+  /* Styles for small devices */
+  .stats-section {
+    padding: 1.5rem; /* Adjust padding for small devices */
+  }
+}
+
+/* Small devices (tablets, 640px and up) */
+@media (min-width: 640px) {
+  /* Styles for medium devices */
+  .stats-section {
+    padding: 2rem; /* Adjust padding for medium devices */
+  }
+}
+
+/* Medium devices (desktops, 768px and up) */
+@media (min-width: 768px) {
   /* Section heading styles */
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.stats-container {
-  /* Container for stats */
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.stat-item {
-  /* Single stat item styles */
-  margin: 1rem;
-  text-align: center;
-}
-
-.stat-item h3 {
-  /* Statistic styles */
-  font-size: 2.5rem;
-  color: #ff6600;
-}
-
-.stat-item p {
-  /* Description styles */
-  font-size: 1.2rem;
-}
-
-@media (max-width: 768px) {
-  /* Responsive styles for mobile */
+  .stats-section h2 {
+    font-size: 2rem; /* Original size for medium devices */
+  }
   .stats-container {
-    flex-direction: column;
+    flex-direction: row; /* Align stats in a row */
   }
   .stat-item {
-    margin: 1rem 0;
+    margin: 1rem; /* Maintain margin for spacing */
   }
   .stat-item h3 {
-    font-size: 2rem;
+    font-size: 2.5rem; /* Original size for medium devices */
   }
   .stat-item p {
-    font-size: 1rem;
+    font-size: 1.2rem; /* Original size for medium devices */
+  }
+}
+
+/* Large devices (large desktops, 1024px and up) */
+@media (min-width: 1024px) {
+  /* Styles for large devices */
+  .stats-section h2 {
+    font-size: 2.5rem; /* Adjust size for large devices */
+  }
+  .stat-item h3 {
+    font-size: 3rem; /* Adjust size for large devices */
+  }
+}
+
+/* Extra large devices (larger desktops, 1280px and up) */
+@media (min-width: 1280px) {
+  /* Styles for extra large devices */
+  .stats-section h2 {
+    font-size: 3rem; /* Adjust size for extra large devices */
+  }
+  .stat-item h3 {
+    font-size: 3.5rem; /* Adjust size for extra large devices */
+  }
+}
+
+/* 2x large devices (1536px and up) */
+@media (min-width: 1536px) {
+  /* Styles for 2x large devices */
+  .stats-section h2 {
+    font-size: 3.5rem; /* Adjust size for 2x large devices */
+  }
+  .stat-item h3 {
+    font-size: 4rem; /* Adjust size for 2x large devices */
   }
 }

@@ -2,7 +2,7 @@
   /* Contact form section container styles */
   background: #f4f4f4;
   color: #333;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
 }
 
@@ -37,6 +37,18 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+/* Media queries for larger screens */
+@media (min-width: 640px) {
+  .contact-form {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    width: 45%;
+  }
 }
 
 @media (max-width: 768px) {

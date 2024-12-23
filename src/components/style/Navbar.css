@@ -7,8 +7,14 @@
 .nav-links {
   /* Styles for the list of nav links */
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   list-style: none;
+}
+
+.nav-links li {
+  margin-bottom: 1.2rem;
+  margin-inline: 1.9rem;
 }
 
 .nav-links li a {
@@ -17,9 +23,119 @@
   text-decoration: none;
 }
 
-@media (max-width: 768px) {
+@keyframes active {
+  0% {
+    color: #ff0000d6;
+  }
+  5% {
+    color: #8c00ffd6;
+  }
+  10% {
+    color: #91ff00d6;
+  }
+  15% {
+    color: #00d0ffd6;
+  }
+  20% {
+    color: #00ff6ed6;
+  }
+  25% {
+    color: #ff0095d6;
+  }
+  30% {
+    color: #0015ffd6;
+  }
+  35% {
+    color: #00ffc3d6;
+  }
+  40% {
+    color: #f6d0e6d6;
+  }
+  45% {
+    color: #906aefd6;
+  }
+  50% {
+    color: #a7fd5bd6;
+  }
+  55% {
+    color: #efff60d6;
+  }
+  60% {
+    color: #ff7b00d6;
+  }
+  65% {
+    color: #673030d6;
+  }
+  70% {
+    color: #e772b6d6;
+  }
+  75% {
+    color: #00ffb7;
+  }
+  80% {
+    color: #ff0095;
+  }
+  85% {
+    color: #32b100d6;
+  }
+  90% {
+    color: #ff00f7;
+  }
+  95% {
+    color: #ff4d00;
+  }
+  100% {
+    color: #ff0095d6;
+  }
+}
+
+.active {
+  animation: active 40s infinite;
+  font-weight: 600;
+}
+
+.nav-links li a:hover,
+.nav-links li a:active {
+  color: #3d4df2;
+  text-decoration: underline;
+}
+
+.small-nav-links {
+  display: none;
+}
+
+@media (max-width: 700px) {
   /* Responsive styles for mobile */
+  .small-nav-links {
+    display: inline-block;
+  }
   .nav-links {
-    flex-direction: column;
+    display: none; /* Hide regular nav links */
+  }
+  .nav-links-small {
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+  }
+  .nav-links-small li a {
+    /* Styles for the small nav links */
+    color: white;
+    text-decoration: none;
+    margin: 0.5rem 0; /* Adjust margin for better spacing */
+  }
+  .nav-links-small li a:hover,
+  .nav-links-small li a:active {
+    /* Styles for the small nav links */
+    color: #3d4df2;
+    text-decoration: underline;
+    font-weight: 900;
+  }
+}
+
+@media (min-width: 700px) {
+  .small-nav-links {
+    display: none; /* Hide small nav links on larger screens */
   }
 }

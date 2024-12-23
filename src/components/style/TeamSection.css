@@ -1,9 +1,77 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+} */
+
 .team-section {
   /* Team section container styles */
-  background: #f4f4f4;
+  background: #f9f9f9;
   color: #333;
-  padding: 2rem;
-  text-align: center;
+  padding: 1rem; /* Default padding for mobile */
+}
+
+/* xs - Extra Small Devices */
+@media (min-width: 475px) {
+  /* Styles for small devices */
+  .team-section {
+    padding: 1.5rem; /* Adjust padding for small devices */
+  }
+}
+
+/* sm - Small Devices */
+@media (min-width: 640px) {
+  /* Styles for medium devices */
+  .team-section {
+    padding: 2rem; /* Adjust padding for medium devices */
+  }
+}
+
+/* md - Medium Devices */
+@media (min-width: 768px) {
+  /* Section heading styles */
+  .team-section h2 {
+    font-size: 2rem; /* Original size for medium devices */
+  }
+  .team-section .team-member {
+    display: inline-block; /* Align team members in a row */
+    width: 45%; /* Adjust width for medium devices */
+    margin: 1rem; /* Add margin for spacing */
+  }
+}
+
+/* lg - Large Devices */
+@media (min-width: 1024px) {
+  /* Styles for large devices */
+  .team-section h2 {
+    font-size: 2.5rem; /* Adjust size for large devices */
+  }
+  .team-section .team-member {
+    width: 30%; /* Adjust width for large devices */
+  }
+}
+
+/* xl - Extra Large Devices */
+@media (min-width: 1280px) {
+  /* Styles for extra large devices */
+  .team-section h2 {
+    font-size: 3rem; /* Adjust size for extra large devices */
+  }
+  .team-section .team-member {
+    width: 22%; /* Adjust width for extra large devices */
+  }
+}
+
+/* 2xl - Double Extra Large Devices */
+@media (min-width: 1536px) {
+  /* Styles for 2x large devices */
+  .team-section h2 {
+    font-size: 3.5rem; /* Adjust size for 2x large devices */
+  }
+  .team-section .team-member {
+    width: 20%; /* Adjust width for 2x large devices */
+  }
 }
 
 .team-section h2 {
@@ -37,16 +105,16 @@
   margin: 0.5rem 0;
 }
 
+/* Responsive styles for mobile */
 @media (max-width: 768px) {
-  /* Responsive styles for mobile */
   .team-members {
-    flex-direction: column;
+    flex-direction: column; /* Stack team members on small screens */
   }
   .team-member {
-    margin: 1rem 0;
+    margin: 1rem 0; /* Adjust margin for stacked items */
   }
   .team-member img {
-    width: 100px;
+    width: 100px; /* Adjust image size for small screens */
     height: 100px;
   }
 }

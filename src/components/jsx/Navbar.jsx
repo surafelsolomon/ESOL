@@ -1,46 +1,49 @@
-// import React from "react"; // Import React
-import { Link } from "react-router-dom"; // Import Link for routing
+import { NavLink } from "react-router-dom"; // Import NavLink for routing
+import { useState } from "react";
 import "../style/Navbar.css"; // Import CSS for Navbar
-
 const Navbar = () => {
+  const [navbarState, setNavbarState] = useState(true);
+
+  const navLinks = [
+    // Array to hold navigation links
+    { to: "/", label: "Home" },
+    { to: "/about-us", label: "About Us" },
+    { to: "/services", label: "Services" },
+    { to: "/portfolio", label: "Portfolio" },
+    { to: "/contact-us", label: "Contact Us" },
+    { to: "/customer-portal", label: "Customer Portal" },
+    { to: "/resource-center", label: "Resource Center" },
+    { to: "/events-calendar", label: "Events Calendar" },
+    { to: "/FAQs", label: "FAQs" },
+  ];
+
   return (
-    <nav className="navbar">
+    <nav className="navbar" onMouseLeave={() => setNavbarState(true)}>
       {" "}
       {/* Navbar container */}
-      <ul className="nav-links">
+      <div className="small-nav-links">
+        <img
+          alt={navbarState ? "menu-button" : "x-button"}
+          onClick={() => setNavbarState(!navbarState)} // Toggle state
+        />
+      </div>
+      <ul className={navbarState ? "nav-links" : "nav-links-small"}>
         {" "}
         {/* List for navigation links */}
-        <li>
-          <Link to="/">Home</Link>
-        </li>{" "}
-        <li>
-          <Link to="/about-us">About Us</Link>
-        </li>{" "}
-        {/* Link to About Us page */}
-        <li>
-          <Link to="/services">Services</Link>
-        </li>{" "}
-        {/* Link to Services page */}
-        <li>
-          <Link to="/portfolio">Portfolio</Link>
-        </li>{" "}
-        {/* Link to Portfolio page */}
-        <li>
-          <Link to="/contact-us">Contact Us</Link>
-        </li>{" "}
-        <li>
-          <Link to="/customer-portal">Customer Portal</Link>
-        </li>{" "}
-        <li>
-          <Link to="/resource-center">Resource Center</Link>
-        </li>{" "}
-        <li>
-          <Link to="/events-calendar">Events Calendar</Link>
-        </li>{" "}
-        <li>
-          <Link to="/FAQs">FAQs</Link>
-        </li>{" "}
-        {/* Link to Contact Us page */}
+        {navLinks.map(
+          (
+            { to, label } // Map through navLinks array
+          ) => (
+            <li key={to}>
+              <NavLink
+                to={to}
+                className={({ isActive }) => isActive && "active"}
+              >
+                {label}
+              </NavLink>
+            </li>
+          )
+        )}
       </ul>
     </nav>
   );
