@@ -1,0 +1,213 @@
+ESOL Web App Site Map
+├── Home Page
+│   ├── Navbar
+│   │   ├── About Us
+│   │   ├── Services
+│   │   ├── Portfolio
+│   │   ├── Contact Us
+│   ├── Hero Header Section
+│   │   ├── Captivating headline
+│   │   ├── Brief introduction to ESOL
+│   │   ├── Mission statement
+│   ├── Features List Section
+│   │   ├── Key Offerings
+│   │   │   ├── ERP Solutions
+│   │   │   ├── VDI Solutions
+│   │   │   ├── 3D Virtualization (V-Next)
+│   │   ├── Additional Offerings
+│   │   │   ├── Business Intelligence (BI) Tools
+│   │   │   ├── IT Consultancy
+│   │   │   ├── Office IT Supplies
+│   ├── CTA Section
+│   │   ├── Button to Contact Us page
+│   │   ├── Highlight benefits of contacting
+│   ├── Footer
+│       ├── Copyright notices
+│       ├── Privacy policies
+│       ├── Links to social media pages
+├── About Us Page
+│   ├── Navbar
+│   │   ├── About Us
+│   │   ├── Services
+│   │   ├── Portfolio
+│   │   ├── Contact Us
+│   ├── Header Section
+│   │   ├── "About Us" title
+│   │   ├── Introduction to page content
+│   ├── About Section
+│   │   ├── Company history
+│   │   ├── Founding story
+│   │   ├── Vision for the future
+│   │   ├── Core values
+│   ├── Team Section
+│   │   ├── Photos of key team members
+│   │   ├── Brief biographies
+│   │   ├── Roles and expertise
+│   │   ├── Contributions to the company
+│   ├── Benefits Section
+│   │   ├── Experience
+│   │   ├── Innovative solutions
+│   │   ├── Customer-centric approach
+│   │   ├── Industry-specific expertise
+│   ├── Stats Section
+│   │   ├── Number of successful projects
+│   │   ├── Client satisfaction rates
+│   │   ├── Industry awards received
+│   ├── Testimonial Section
+│   │   ├── Customer testimonials
+│   │   ├── Success stories
+│   ├── CTA Section
+│   │   ├── Contacting the company
+│   │   ├── Requesting more information
+│   │   ├── Exploring specific services
+│   ├── Footer
+│       ├── Copyright notices
+│       ├── Privacy policies
+│       ├── Links to social media pages
+├── Portfolio Page
+│   ├── Navbar
+│   │   ├── About Us
+│   │   ├── Services
+│   │   ├── Portfolio
+│   │   ├── Contact Us
+│   ├── Portfolio List Section
+│   │   ├── Visual showcase of completed projects
+│   │   ├── Thumbnails and brief descriptions
+│   ├── Feature Section
+│   │   ├── Detailed information on prominent projects
+│   │   ├── Challenges faced
+│   │   ├── Solutions implemented
+│   │   ├── Outcomes achieved
+│   ├── Testimonial Section
+│   │   ├── Client testimonials related to projects
+│   ├── Gallery Section
+│   │   ├── Image gallery of completed projects
+│   ├── CTA Section
+│   │   ├── Explore more projects
+│   │   ├── Contact ESOL for project inquiries
+│   │   ├── Book a demo
+│   ├── Footer
+│       ├── Copyright notices
+│       ├── Privacy policies
+│       ├── Links to social media pages
+├── Services Page
+│   ├── Navbar
+│   │   ├── About Us
+│   │   ├── Services
+│   │   ├── Portfolio
+│   │   ├── Contact Us
+│   ├── Header Section
+│   │   ├── Title (e.g., "Our Services", "Solutions for Your Business")
+│   │   ├── Brief overview of services
+│   ├── Services Section
+│   │   ├── Comprehensive list of services
+│   │   │   ├── ERPNext Implementation
+│   │   │   ├── 3D Virtualization (V-Next)
+│   │   │   ├── IT Consultancy
+│   │   │   ├── Office IT Supplies
+│   ├── Feature Section
+│   │   ├── ERPNext Implementation
+│   │   │   ├── Detailed description
+│   │   │   ├── Implementation process
+│   │   │   ├── Customization and integration
+│   │   │   ├── Customer testimonials
+│   │   ├── 3D Virtualization
+│   │   │   ├── Detailed description
+│   │   │   ├── Use cases and applications
+│   │   │   ├── Customer testimonials
+│   ├── Features List Section
+│   │   ├── IT Consultancy
+│   │   ├── Office IT Supplies
+│   ├── CTA Section
+│   │   ├── Contact Us for more information
+│   │   ├── Book a demo
+│   ├── Footer
+│       ├── Copyright notices
+│       ├── Privacy policies
+│       ├── Links to social media pages
+│   ├── ERPNext Implementation Page
+│   │   ├── Detailed overview of ERPNext
+│   │   ├── Implementation process
+│   │   ├── Customization options
+│   │   ├── Key benefits
+│   │   ├── Customer testimonials
+│   │   ├── CTA
+│   ├── 3D Virtualization Page
+│   │   ├── Detailed overview of 3D Virtualization
+│   │   ├── Technology explanation
+│   │   ├── Benefits
+│   │   ├── Use cases
+│   │   ├── Success stories
+│   │   ├── CTA
+│   ├── ERPNext Projects and 3D Virtualization Projects Pages
+│   │   ├── Detailed descriptions of projects
+│   │   ├── Unique features
+│   │   ├── Client testimonials
+│   │   ├── CTA
+│   ├── Project Page
+│   │   ├── Detailed overview of specific project
+│   │   ├── Objectives
+│   │   ├── Deliverables
+│   │   ├── Timeline
+│   │   ├── Technologies used
+│   │   ├── Client testimonials
+│   │   ├── Performance metrics
+│   │   ├── Image gallery
+│   ├── Products Page
+│   │   ├── ERPNext solutions
+│   │   ├── 3D virtualization solutions
+│   │   ├── Other IT products and services
+│   ├── ERPNext and 3D Virtualization Product Pages
+│   │   ├── Product features
+│   │   ├── Benefits
+│   │   ├── Pricing
+│   │   ├── Customer testimonials
+│   ├── Pricing Page
+│   │   ├── Detailed pricing plans
+│   │   ├── Comparison of different plans
+│   │   ├── Custom quotes
+│   ├── FAQ Page
+│   │   ├── Common questions
+│   │   ├── Contact support option
+│   ├── Contact Us Page
+│   │   ├── Contact information
+│   │   │   ├── Phone number
+│   │   │   ├── Email address
+│   │   │   ├── Physical address
+│   │   ├── Contact form
+│   │   │   ├── Fields for name, email, phone, message
+│   │   │   ├── CAPTCHA verification
+│   │   │   ├── Submit button
+├── Customer Portal
+│   ├── Secure Login
+│   │   ├── Username
+│   │   ├── Password
+│   │   ├── Forgot Password link
+│   ├── Dashboard
+│   │   ├── Personalized content
+│   │   ├── Access to services
+│   │   ├── Account settings
+│   ├── Billing Information
+│   │   ├── View invoices
+│   │   ├── Make payments
+├── Events Calendar
+│   ├── Upcoming Webinars
+│   ├── Seminars
+│   ├── Other Events
+│   ├── Event Registration
+│   │   ├── Form for registration details
+│   │   ├── Submit button
+├── Resource Center
+│   ├── Whitepapers
+│   ├── Case Studies
+│   ├── E-books
+│   ├── Videos
+│   ├── Downloadable Content
+├── FAQs
+│   ├── General Questions
+│   ├── ERP Solutions
+│   ├── VDI Solutions
+│   ├── 3D Virtualization (V-Next)
+│   ├── BI Tools
+│   ├── IT Consultancy
+│   ├── Office IT Supplies

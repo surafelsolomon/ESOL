@@ -1,0 +1,47 @@
+.portfolio-list-section {
+  /* Portfolio list section container styles */
+  background: #f4f4f4;
+  color: #333;
+  padding: 2rem;
+  text-align: center;
+}
+
+.portfolio-list-section h2 {
+  /* Section heading styles */
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.portfolio-items {
+  /* Container for portfolio items */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.portfolio-item {
+  /* Single portfolio item styles */
+  margin: 1rem;
+  text-align: left;
+}
+
+.portfolio-item img {
+  /* Project thumbnail styles */
+  width: 100%;
+  height: auto;
+}
+
+.portfolio-item p {
+  /* Project description styles */
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+  /* Responsive styles for mobile */
+  .portfolio-items {
+    flex-direction: column;
+  }
+  .portfolio-item {
+    margin: 1rem 0;
+  }
+}

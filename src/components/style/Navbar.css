@@ -1,0 +1,26 @@
+.navbar {
+  /* Navbar container styles */
+  background-color: #333;
+  padding: 1rem;
+}
+
+.nav-links {
+  /* Styles for the list of nav links */
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li a {
+  /* Styles for the nav links */
+  color: white;
+  text-decoration: none;
+  text-overflow: clip;
+  margin: 0 2rem;
+}
+
+@media (max-width: 768px) {
+  /* Responsive styles for mobile */
+  .nav-links {
+    flex-direction: column;
+  }
+}

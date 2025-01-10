@@ -1,0 +1,11 @@
+.app {
+  /* App container styles */
+  font-family: Arial, sans-serif;
+}
+
+@media (max-width: 768px) {
+  /* Responsive styles for mobile */
+  .app {
+    padding: 1rem;
+  }
+}

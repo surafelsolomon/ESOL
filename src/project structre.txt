@@ -1,0 +1,36 @@
+src/
+  ├── components/
+  │   ├── Navbar.jsx
+  │   ├── HeroHeader.jsx
+  │   ├── FeaturesList.jsx
+  │   ├── CTASection.jsx
+  │   ├── Footer.jsx
+  │   ├── AboutSection.jsx
+  │   ├── TeamSection.jsx
+  │   ├── BenefitsSection.jsx
+  │   ├── StatsSection.jsx
+  │   ├── TestimonialSection.jsx
+  │   ├── PortfolioListSection.jsx
+  │   ├── FeatureSection.jsx
+  │   ├── GallerySection.jsx
+  │   ├── ContactForm.jsx
+  │   ├── LiveChatSupport.jsx
+  │   ├── SecureLogin.jsx
+  │   ├── Dashboard.jsx
+  │   ├── SupportTickets.jsx
+  │   ├── BillingInformation.jsx
+  │   ├── EventsCalendar.jsx
+  │   ├── ResourceCenter.jsx
+  │   ├── FAQs.jsx
+  │   ├── NewsletterSignup.jsx
+  │   ├── TestimonialsAndReviews.jsx
+  ├── pages/
+  │   ├── HomePage.jsx
+  │   ├── AboutUsPage.jsx
+  │   ├── ServicesPage.jsx
+  │   ├── PortfolioPage.jsx
+  │   ├── ContactUsPage.jsx
+  │   ├── CustomerPortalPage.jsx
+  ├── App.jsx
+  ├── index.js
+  ├── App.css

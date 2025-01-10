@@ -1,0 +1,56 @@
+.feature-section {
+  /* Feature section container styles */
+  background: #fff;
+  color: #333;
+  padding: 2rem;
+  text-align: center;
+}
+
+.feature-section h2 {
+  /* Section heading styles */
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.feature-details {
+  /* Container for feature details */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.feature-details img {
+  /* Featured project image styles */
+  max-width: 50%;
+  height: auto;
+  margin: 1rem;
+}
+
+.details {
+  /* Details container styles */
+  max-width: 50%;
+  text-align: left;
+}
+
+.details h3 {
+  /* Project title styles */
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.details p {
+  /* Paragraph styles */
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+  /* Responsive styles for mobile */
+  .feature-details {
+    flex-direction: column;
+  }
+  .feature-details img,
+  .details {
+    max-width: 100%;
+  }
+}

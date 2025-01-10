@@ -1,0 +1,51 @@
+.billing-information-section {
+  /* Billing information section container styles */
+  background: #f4f4f4;
+  color: #333;
+  padding: 2rem;
+  text-align: center;
+}
+
+.billing-information-section h2 {
+  /* Section heading styles */
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.billing-content {
+  /* Billing content container styles */
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.billing-item {
+  /* Single billing item styles */
+  background: #fff;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.billing-item h3 {
+  /* Item heading styles */
+  font-size: 1.5rem;
+}
+
+.billing-item p {
+  /* Item description styles */
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+  /* Responsive styles for mobile */
+  .billing-content {
+    flex-direction: column;
+  }
+  .billing-item {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}

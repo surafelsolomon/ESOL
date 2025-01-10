@@ -1,0 +1,34 @@
+.features-list {
+  /* Features list container styles */
+  background: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.features-list h2 {
+  /* Section heading styles */
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.features-list ul {
+  /* Styles for the list */
+  list-style: none;
+  padding: 0;
+}
+
+.features-list li {
+  /* Styles for each list item */
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+  /* Responsive styles for mobile */
+  .features-list h2 {
+    font-size: 1.5rem;
+  }
+  .features-list li {
+    font-size: 1rem;
+  }
+}

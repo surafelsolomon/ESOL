@@ -1,0 +1,35 @@
+.benefits-section {
+  /* Benefits section container styles */
+  background: #fff;
+  color: #333;
+  padding: 2rem;
+  text-align: center;
+}
+
+.benefits-section h2 {
+  /* Section heading styles */
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.benefits-section ul {
+  /* List styles */
+  list-style: none;
+  padding: 0;
+}
+
+.benefits-section li {
+  /* List item styles */
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+  /* Responsive styles for mobile */
+  .benefits-section h2 {
+    font-size: 1.5rem;
+  }
+  .benefits-section li {
+    font-size: 1rem;
+  }
+}
