@@ -18,9 +18,51 @@
   margin: 0 2rem;
 }
 
-@media (max-width: 768px) {
-  /* Responsive styles for mobile */
+/* Extra Small devices (phones, 475px and up) */
+@media (min-width: 475px) {
   .nav-links {
-    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+/* Small devices (tablets, 640px and up) */
+@media (min-width: 640px) {
+  .nav-links {
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .nav-links {
+    gap: 1.5rem;
+  }
+}
+
+/* Large devices (desktops, 1024px and up) */
+@media (min-width: 1024px) {
+  .navbar {
+    padding: 1.5rem;
+  }
+  .nav-links {
+    gap: 2rem;
+  }
+}
+
+/* Extra Large devices (large desktops, 1280px and up) */
+@media (min-width: 1280px) {
+  .navbar {
+    padding: 2rem;
+  }
+}
+
+/* 2X Large devices (larger desktops, 1536px and up) */
+@media (min-width: 1536px) {
+  .navbar {
+    padding: 2.5rem;
+  }
+  .nav-links {
+    gap: 3rem;
   }
 }
