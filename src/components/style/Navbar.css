@@ -42,7 +42,6 @@
 /* Medium devices (tablets, 768px and up) - Switch to column layout */
 @media (min-width: 768px) {
   .nav-links {
-    flex-direction: column;
     gap: 1.5rem;
   }
 }
