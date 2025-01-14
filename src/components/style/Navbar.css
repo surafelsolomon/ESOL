@@ -41,34 +41,37 @@
   }
 }
 
-/* Medium devices (tablets, 768px and up)  */
+/* Medium devices (tablets, 768px and up) - Switch to column layout */
 @media (min-width: 768px) {
-  .nav-links li a {
-    /* Styles for the nav links */
-    margin: 0 1.5rem;
+  .nav-links {
+    flex-direction: column;
+    gap: 1.5rem;
   }
 }
 
 /* Large devices (desktops, 1024px and up) */
 @media (min-width: 1024px) {
-  .nav-links li a {
-    /* Styles for the nav links */
-    margin: 0 2rem;
+  .navbar {
+    padding: 1.5rem;
+  }
+  .nav-links {
+    gap: 2rem;
   }
 }
 
 /* Extra Large devices (large desktops, 1280px and up) */
 @media (min-width: 1280px) {
-  .nav-links li a {
-    /* Styles for the nav links */
-    margin: 0 2.5rem;
+  .navbar {
+    padding: 2rem;
   }
 }
 
 /* 2X Large devices (larger desktops, 1536px and up) */
 @media (min-width: 1536px) {
-  .nav-links li a {
-    /* Styles for the nav links */
-    margin: 0 3rem;
+  .navbar {
+    padding: 2.5rem;
+  }
+  .nav-links {
+    gap: 3rem;
   }
 }
