@@ -17,6 +17,11 @@
   text-decoration: none;
 }
 
+.current-active {
+  color: lightblue;
+  text-decoration: underline;
+}
+
 /* Extra Small devices (phones, 475px and up) */
 @media (min-width: 300px) {
   .nav-links {
