@@ -19,9 +19,9 @@
 
 /* Extra Small devices (phones, 475px and up) */
 @media (min-width: 475px) {
-  /* .nav-links {
+  .nav-links {
     flex-direction: column;
-  } */
+  }
   .nav-links li a {
     /* Styles for the nav links */
     margin: 0.5rem 0;
@@ -53,6 +53,7 @@
   }
   .nav-links {
     gap: 2rem;
+    flex-direction: row;
   }
 }
 
