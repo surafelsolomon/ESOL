@@ -1,49 +1,31 @@
-// import React from "react"; // Import React
-import { Link } from "react-router-dom"; // Import Link for routing
+import { NavLink } from "react-router-dom"; // Import NavLink for routing
 import "../style/Navbar.css"; // Import CSS for Navbar
 
-const Navbar = () => {
-  return (
-    <nav className="navbar">
-      {" "}
-      {/* Navbar container */}
-      <ul className="nav-links">
-        {" "}
-        {/* List for navigation links */}
-        <li>
-          <Link to="/">Home</Link>
-        </li>{" "}
-        <li>
-          <Link to="/about-us">About Us</Link>
-        </li>{" "}
-        {/* Link to About Us page */}
-        <li>
-          <Link to="/services">Services</Link>
-        </li>{" "}
-        {/* Link to Services page */}
-        <li>
-          <Link to="/portfolio">Portfolio</Link>
-        </li>{" "}
-        {/* Link to Portfolio page */}
-        <li>
-          <Link to="/contact-us">Contact Us</Link>
-        </li>{" "}
-        <li>
-          <Link to="/customer-portal">Customer Portal</Link>
-        </li>{" "}
-        <li>
-          <Link to="/resource-center">Resource Center</Link>
-        </li>{" "}
-        <li>
-          <Link to="/events-calendar">Events Calendar</Link>
-        </li>{" "}
-        <li>
-          <Link to="/FAQs">FAQs</Link>
-        </li>{" "}
-        {/* Link to Contact Us page */}
-      </ul>
-    </nav>
-  );
-};
+const navItems = [
+  { to: "/", label: "Home" },
+  { to: "/about-us", label: "About Us" },
+  { to: "/services", label: "Services" },
+  { to: "/portfolio", label: "Portfolio" },
+  { to: "/contact-us", label: "Contact Us" },
+  { to: "/customer-portal", label: "Customer Portal" },
+  { to: "/resource-center", label: "Resource Center" },
+  { to: "/events-calendar", label: "Events Calendar" },
+  { to: "/FAQs", label: "FAQs" },
+  // Add more items as needed
+];
 
-export default Navbar; // Export Navbar component
+const Navbar = () => (
+  <nav className="navbar">
+    <ul className="nav-links">
+      {navItems.map((item, index) => (
+        <li key={index}>
+          <NavLink exact to={item.to} activeClassName="active">
+            {item.label}
+          </NavLink>
+        </li>
+      ))}
+    </ul>
+  </nav>
+);
+
+export default Navbar;
