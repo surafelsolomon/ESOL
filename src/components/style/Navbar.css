@@ -19,7 +19,7 @@
 
 .current-active {
   color: lightblue;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 /* Extra Small devices (phones, 475px and up) */
@@ -29,7 +29,6 @@
   }
   .nav-links li a {
     /* Styles for the nav links */
-    margin: 0.5rem 0;
   }
 }
 
@@ -52,13 +51,22 @@
   }
 }
 
+/* Small devices (less than 768px) - Hide nav-links */
+@media (max-width: 767px) {
+  .nav-links {
+    display: none;
+  }
+}
+
 /* Large devices (desktops, 1024px and up) */
 @media (min-width: 1024px) {
   .navbar {
     padding: 1.5rem;
   }
   .nav-links {
-    gap: 2rem;
+    display: flex;
+    gap: 1.3rem;
+    flex-direction: row;
   }
 }
 
