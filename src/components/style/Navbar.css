@@ -8,8 +8,6 @@
   /* Styles for the list of nav links */
 
   display: flex;
-  flex-direction: row;
-
   list-style: none;
 }
 
@@ -21,9 +19,9 @@
 
 /* Extra Small devices (phones, 475px and up) */
 @media (min-width: 475px) {
-  .nav-links {
+  /* .nav-links {
     flex-direction: column;
-  }
+  } */
   .nav-links li a {
     /* Styles for the nav links */
     margin: 0.5rem 0;
@@ -32,9 +30,9 @@
 
 /* Small devices (tablets, 640px and up) */
 @media (min-width: 640px) {
-  .nav-links {
+  /* .nav-links {
     flex-direction: column;
-  }
+  } */
   .nav-links li a {
     /* Styles for the nav links */
     margin: 0 1rem;
