@@ -21,15 +21,19 @@
   color: lightblue;
   text-decoration: underline;
 }
-
+.show-hide {
+  display: none;
+}
+.hide {
+  display: none;
+}
 /* Extra Small devices (phones, 475px and up) */
 @media (min-width: 300px) {
-  .nav-links {
-    flex-direction: column;
-  }
-  .nav-links li a {
-    /* Styles for the nav links */
-  }
+  /* .nav-links {
+  } */
+  /* .nav-links li a {
+    /* Styles for the nav links 
+  } */
 }
 
 /* Small devices (tablets, 640px and up) */
@@ -52,11 +56,14 @@
   }
 }
 
-/* Small devices (less than 768px) - Hide nav-links */
+/* Small devices (less than 768px) - Hide nav-links and show image-toggle */
 @media (max-width: 767px) {
   .nav-links {
-    display: none;
+    /* display: none; */
     flex-direction: column;
+  }
+  .show-hide {
+    display: block;
   }
 }
 
