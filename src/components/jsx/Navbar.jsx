@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom"; // Import NavLink for routing
-import "../style/Navbar.css"; // Import CSS for Navbar
+import { NavLink } from "react-router-dom";
+import "../style/Navbar.css";
 
 const navItems = [
   { to: "/", label: "Home" },
@@ -12,22 +12,24 @@ const navItems = [
   { to: "/resource-center", label: "Resource Center" },
   { to: "/events-calendar", label: "Events Calendar" },
   { to: "/FAQs", label: "FAQs" },
-  // Add more items as needed
 ];
 
 const Navbar = () => {
-  const [visible, setvisible] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <nav className="navbar">
+      {/* Mobile Toggle Button */}
       <div className="show-hide">
-        {visible ? (
-          <p onClick={() => setvisible(false)}>x logo</p>
+        {isMenuOpen ? (
+          <p onClick={() => setIsMenuOpen(false)}>×</p>
         ) : (
-          <p onClick={() => setvisible(true)}>a menu logo </p>
+          <p onClick={() => setIsMenuOpen(true)}>☰</p>
         )}
       </div>
-      <ul className={visible ? "nav-links" : "nav-links hide"}>
+
+      {/* Navigation Links */}
+      <ul className={`nav-links ${isMenuOpen ? "" : "hide"}`}>
         {navItems.map((item, index) => (
           <li key={index}>
             <NavLink

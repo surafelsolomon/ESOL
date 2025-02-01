@@ -1,40 +1,23 @@
-import { motion } from "framer-motion"; // Import motion for animations
-import "../style/HeroHeader.css"; // Import CSS for HeroHeader
+// import React from "react";
+import "../style/HeroHeader.css";
 
-const HeroHeader = () => {
+const HeroSection = () => {
   return (
-    <header className="hero-header">
-      {" "}
-      {/* Hero header container */}
-      <motion.h1
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-      >
-        {" "}
-        {/* Animated headline */}
-        Captivating Headline
-      </motion.h1>
-      <motion.p
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 0.5 }}
-      >
-        {" "}
-        {/* Animated introduction */}
-        Brief introduction to ESOL
-      </motion.p>
-      <motion.p
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 1 }}
-      >
-        {" "}
-        {/* Animated mission statement */}
-        Our mission statement
-      </motion.p>
-    </header>
+    <section className="hero-header">
+      {/* Full-width video background */}
+      <video autoPlay loop muted playsInline className="hero-video">
+        <source src="/video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      {/* Hero content */}
+      <div className="hero-content">
+        <h1>Welcome to Our Website</h1>
+        <p>Discover amazing services and products designed just for you!</p>
+        <button className="cta-button">Learn More</button>
+      </div>
+    </section>
   );
 };
 
-export default HeroHeader; // Export HeroHeader component
+export default HeroSection;
